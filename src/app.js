@@ -86,7 +86,7 @@ function addCityCard(city) {
 
     
     const cityHumidity = document.createElement('div');
-    cityHumidity.textContent =  "Humidity: " + city.humidity;
+    cityHumidity.textContent =  "Humidity%: " + city.humidity;
 
     cityDescription.appendChild(cityHumidity);
     cityDescription.appendChild(weatherDescription);
