@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+:root {
+  font-size: 3vmin;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100%;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-group {
+  margin-top: 2rem;
+  position: relative;
+}
+.form-group input[type="text"] {
+  font-size: 2rem;
+  max-width: 900px;
+  width: 90vw;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5rem;
+}
+#submit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.6rem;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  color: #333;
+}
+.circle {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  font-size: 2rem;
+  animation: colorC 1s;
+  animation-iteration-count: infinite;
+  color: #333;
+}
+
+@keyframes colorC {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.error-msg {
+  font-size: 1.2rem;
+  color: maroon;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+.city-name {
+  font-size: 4rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.city-weather {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  font-size: 3rem;
+}
+.city-weather img {
+  height: 8rem;
+}
+
+.city-description {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#cities {
+  margin-top: 20vh;
+  width: 85vw;
+}
+#cities > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+@media screen and (max-device-width: 1200px)and (orientation: landscape) {
+  :root {
+    font-size: 2.5vmin;
+  }
+  #cities {
+    margin-top: 2rem;
+    width: 60vmax;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (min-width: 768px) {
+  :root {
+    font-size: 1.5vmin;
+  }
+  #cities {
+    max-width: 400px;
+  }
+}
+
