@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-image: url("/img/background.jpg");
+  background-image: url("./img/background.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
